@@ -3,8 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import Card from "../Component/Card";
 import Slider from '../Component/Slider';
 import study from "../assets/study.jpeg";
-import library from "../assets/library.jpg";
-import laptop from "../assets/laptop.jpg";
+
 
 const Home = () => {
   return (
@@ -15,15 +14,15 @@ const Home = () => {
           <Slider className=' bg-cover' />
         </div>
         <div className="h-50vh flex items-center bg-blue-700 w-full justify-center mt-4 text-3xl font-display">
-          <h1 className="text-center">
+          <h1 className="text-center font-serif">
             “Courage doesn’t always roar. Sometimes courage is the quiet voice at the end of the day saying ‘I will try again tomorrow’.”
           </h1>
         </div>
         <div className="flex flex-row  font-serif  font-semibold  dark:hover:text-lg"><br/>
-          <Card  title={"Empowering Minds, Shaping Futures"} Image={study}   />
-          <Card title={"Building Bright Futures Together"} Image={library} />
-         <Card title={"Connecting Aspirations with Opportunities"} Image={laptop} />
-          <Card title={"Embark on a Journey of Learning and Growth"} Image={laptop} />
+          <Card title={"Empowering Minds, Shaping Futures"} className='card-img-top img-fluid' Image={study}    />
+          <Card title={"Building Bright Futures Together"} Image={study} />
+         <Card title={"Connecting Aspirations with Opportunities"} Image={study} />
+          <Card title={"Embark on a Journey of Learning and Growth"} Image={study} />
           
         </div>
       </div>

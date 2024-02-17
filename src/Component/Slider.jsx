@@ -10,12 +10,12 @@ import success from "../assets/success.webp"
 export default function Slider() {
   const containerStyle = {
     padding: '20px', // Add padding around the carousel
-    margin: '20px auto', // Center the container horizontally and add margin top and bottom
+    margin: '10px auto ', // Center the container horizontally and add margin top and bottom
     maxWidth: '800px', // Example max-width, adjust as needed
   };
 
   return (
-    <div className='w-80 h-full'>
+    <div style={containerStyle} className='w-full h-full'>
       <Carousel
         autoPlay
         showArrows={false}

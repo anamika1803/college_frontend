@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react' 
 import { io } from 'socket.io-client'
-
-
 export default function Chat() {
 const [message,setMessage] = useState()
 const [room,setRoom] = useState()
@@ -16,15 +14,12 @@ useEffect(()=>{ // run hota h jb ye page rander hoga pehle isme koi dependencies
         setMessages((prev)=>[...prev,msg])
     })
 }, [room])
-  
-
 function send (){
     socket.emit("message",message,room)
 }
 function join (){
     socket.emit("join",room)
 }
-
   return (
 
 
@@ -50,9 +45,6 @@ function join (){
         <button className=' text-fuchsia-950' onClick={send}><b className=' font-serif'>Send</b></button>
         </div>
 }
-    </div>
-
-
-    
+    </div>  
   )
 }
